@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+Covariate & Coef. & Odds ratio & SE & p \\
+\midrule
+Intercept & -1.806800 & 0.164200 & 0.019700 & 0.000000 \\
+sex_female & -0.353700 & 0.702100 & 0.030300 & 0.000000 \\
+first_above_cutoff & 0.265400 & 1.303900 & 0.033800 & 0.000000 \\
+sex_female:first_above_cutoff & -0.222300 & 0.800700 & 0.048100 & 0.000000 \\
+is_dynastic_windowed & -0.083000 & 0.920400 & 0.028100 & 0.003100 \\
+sex_female:is_dynastic_windowed & 0.063900 & 1.066000 & 0.064400 & 0.321200 \\
+first_above_cutoff:is_dynastic_windowed & -0.146800 & 0.863400 & 0.045400 & 0.001200 \\
+sex_female:first_above_cutoff:is_dynastic_windowed & 0.223600 & 1.250600 & 0.104100 & 0.031700 \\
+first_running_var & -0.000100 & 0.999900 & 0.000000 & 0.001600 \\
+\bottomrule
+\end{tabular}
+
+\caption{EXPLORATORY: does dynastic status moderate the H2 gap (full regression).}
+\label{tab:dynasty_moderation}
+\end{table}

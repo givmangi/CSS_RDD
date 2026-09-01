@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+Covariate & Coef. & Odds ratio & SE & p \\
+\midrule
+Intercept & -1.741100 & 0.175300 & 0.024400 & 0.000000 \\
+sex_female & -0.282800 & 0.753700 & 0.057100 & 0.000000 \\
+first_above_cutoff & 0.269600 & 1.309400 & 0.034600 & 0.000000 \\
+sex_female:first_above_cutoff & -0.297900 & 0.742400 & 0.083400 & 0.000400 \\
+first_running_var & 0.000000 & 1.000000 & 0.000000 & 0.110800 \\
+sex_female:first_running_var & 0.000100 & 1.000100 & 0.000100 & 0.243700 \\
+first_above_cutoff:first_running_var & -0.000300 & 0.999700 & 0.000000 & 0.000000 \\
+sex_female:first_above_cutoff:first_running_var & 0.000000 & 1.000000 & 0.000100 & 0.864900 \\
+\bottomrule
+\end{tabular}
+
+\caption{Robustness: hierarchy climb, separate slopes each side of the cutoff.}
+\label{tab:climb_flexible}
+\end{table}
