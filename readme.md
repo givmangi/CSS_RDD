@@ -261,7 +261,7 @@ probability, are: (1) your cache is stale relative to a code change,
 (2) something got modified between what's described here and what's
 actually in the files, (3) something in the Ministry's data changed
 since I downloaded it (it happens, and I wouldn't be surprised given
-the data entry and annotation quality, or lack of, showcased throughout
+the data entry and annotation quality, or lack thereof, showcased throughout
 the datasets).
 
 ## Citation
