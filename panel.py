@@ -355,12 +355,6 @@ def compute_hierarchy_climb(df: pd.DataFrame) -> pd.DataFrame:
     df["_rank"] = hierarchy_rank(df["descrizione_carica"])
     df["snapshot_year"] = df["source_file"].map(snapshot_date_from_filename).dt.year
 
-    # This should always print zero now that filter_inconsistent_entities()
-    # runs upstream in stack_years() and drops these keys before they ever
-    # reach here. If this fires with a nonzero count, the most likely
-    # explanation is a stale cache built before that filter existed -
-    # delete data/preprocessed/*.parquet and rebuild, don't just note the
-    # number and move on.
     sesso_nunique = df.groupby("person_key")["sesso"].nunique()
     inconsistent = (sesso_nunique > 1).sum()
     if inconsistent:
