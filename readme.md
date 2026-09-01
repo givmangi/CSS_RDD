@@ -1,4 +1,4 @@
-# Beyond the Threshold: Individual-Level Persistence and Advancement Among Quota-Elected Women in Italian Municipal Politics
+# Individual-Level Persistence and Advancement Among Quota-Elected Women in Italian Municipal Politics
 
 Replication package for the Computational Social Science final exam
 paper (MSc Data Science, University of Trento). This README exists so
